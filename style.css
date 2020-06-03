@@ -1,0 +1,74 @@
+:root {
+    --color-pallete-01: #0e9aa7;
+    --color-pallete-02: #3da4ab;
+    --color-pallete-03: #f6cd61;
+    --color-pallete-04: #fe8a71;
+    --color-dark: #000;
+    --color-blank: #fff;
+
+    --font-main: 'Ubuntu', sans-serif;
+    --font-secondary: 'Pacifico', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -24px;
+    margin-right: -24px;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.col-6 {
+    width: 50%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.col-4 {
+    width: 33.333333333%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+body {
+    font-family: var(--font-main);
+    font-size: 24px;
+}
+
+.header {
+    font-family: var(--font-secondary);
+    font-size: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    color: var(--color-blank);
+    background-color: var(--color-pallete-01);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section {
+    padding-top: 64px;
+}
