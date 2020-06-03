@@ -18,6 +18,9 @@
     --font-size-paragraph-lineheight: 36px;
     --font-size-lit: 20px;
     --font-size-lit-lineheight: 36px;
+
+    --font-size-pdf: 20px;
+    --font-size-pdf-lineheight: 28px;
 }
 
 * {
@@ -97,3 +100,39 @@ body {
 .lit + .lit {
     margin-top: 24px;
 }
+
+.separator {
+    max-width: 400px;
+    border: 2px solid var(--color-dark);
+    border-radius: 4px;
+}
+
+.essay {
+    margin-top: 40px;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.pdf-link {
+    font-size: var(--font-size-pdf);
+    line-height: var(--font-size-pdf-lineheight);
+    font-weight: lighter;
+    display: block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background ease-in-out .3s;
+    color: var(--color-blank);
+    background-color: var(--color-pallete-02);
+}
+
+.pdf-link:hover {
+    background-color: var(--color-pallete-01);
+}
+
+.pdf-link + .pdf-link {
+    margin-top: 12px;
+}
+
