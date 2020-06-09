@@ -41,22 +41,38 @@ body {
 .header {
     font-family: var(--font-secondary);
     font-size: var(--font-size-header);
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 64px;
+    min-height: 64px;
+    padding: 12px 24px;
     color: var(--color-blank);
     background-color: var(--color-pallete-01);
 }
 
 .container {
+    display: block;
+    font-size: var(--font-size-paragraph);
+    line-height: var(--font-size-paragraph-lineheight);
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+}
+
+.link {
+    display: block;
+    font-size: var(--font-size-paragraph);
+    line-height: var(--font-size-paragraph-lineheight);
+    text-decoration: none;
+    color: rgb(0, 0, 238);
+}
+
+.link + .link {
+    margin-top: 16px;
 }
 
 .section {
@@ -65,11 +81,15 @@ body {
 }
 
 .title {
+    display: block;
+    margin: 36px 0;
     font-size: var(--font-size-title);
     line-height: var(--font-size-title-lineheight);
 }
 
 .subtitle {
+    display: block;
+    margin: 36px 0;
     font-size: var(--font-size-subtitle);
     line-height: var(--font-size-subtitle-lineheight);
 }
@@ -85,6 +105,7 @@ body {
     font-size: var(--font-size-paragraph);
     line-height: var(--font-size-paragraph-lineheight);
     font-weight: lighter;
+    text-decoration: none;
 }
 
 .list + .list {
@@ -103,6 +124,7 @@ body {
 
 .separator {
     max-width: 400px;
+    margin-top: 64px;
     border: 2px solid var(--color-dark);
     border-radius: 4px;
 }
