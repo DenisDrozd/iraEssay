@@ -68,6 +68,7 @@ body {
     font-size: var(--font-size-paragraph);
     line-height: var(--font-size-paragraph-lineheight);
     text-decoration: none;
+    text-align: justify;
     color: rgb(0, 0, 238);
 }
 
