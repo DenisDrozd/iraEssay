@@ -55,18 +55,18 @@ body {
 }
 
 .container {
-    display: block;
     font-size: var(--font-size-paragraph);
     line-height: var(--font-size-paragraph-lineheight);
+    display: block;
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
 }
 
 .link {
-    display: block;
     font-size: var(--font-size-paragraph);
     line-height: var(--font-size-paragraph-lineheight);
+    display: block;
     text-decoration: none;
     text-align: justify;
     color: rgb(0, 0, 238);
@@ -82,23 +82,26 @@ body {
 }
 
 .title {
-    display: block;
-    margin: 36px 0;
     font-size: var(--font-size-title);
     line-height: var(--font-size-title-lineheight);
+    display: block;
+    margin: 36px 0;
+    text-align: justify;
 }
 
 .subtitle {
-    display: block;
-    margin: 36px 0;
     font-size: var(--font-size-subtitle);
     line-height: var(--font-size-subtitle-lineheight);
+    display: block;
+    margin: 36px 0;
+    text-align: justify;
 }
 
 .paragraph {
     font-size: var(--font-size-paragraph);
     line-height: var(--font-size-paragraph-lineheight);
     font-weight: lighter;
+    text-align: justify;
     text-indent: 24px;
 }
 
@@ -107,6 +110,7 @@ body {
     line-height: var(--font-size-paragraph-lineheight);
     font-weight: lighter;
     text-decoration: none;
+    text-align: justify;
 }
 
 .list + .list {
@@ -117,6 +121,7 @@ body {
     font-size: var(--font-size-lit);
     line-height: var(--font-size-lit-lineheight);
     text-indent: 40px;
+    text-align: justify;
 }
 
 .lit + .lit {
@@ -146,6 +151,7 @@ body {
     padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
+    text-align: justify;
     transition: background ease-in-out .3s;
     color: var(--color-blank);
     background-color: var(--color-pallete-02);
